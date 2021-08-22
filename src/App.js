@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import {Helmet} from "react-helmet";
 import './App.css';
 
 function App() {
@@ -18,6 +19,11 @@ function App() {
           Learn React
         </a>
       </header>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Home Page</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
     </div>
   );
 }
